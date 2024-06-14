@@ -1,0 +1,104 @@
+.product-detail {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #262323dd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-container {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .product-info {
+    color: whitesmoke;
+    flex: 2;
+    padding: 20px;
+  }
+  
+  .product-info h1 {
+    font-size: 28px;
+    margin: 0 0 10px;
+  }
+  
+  .price {
+    font-size: 24px;
+    color: green;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: red;
+    margin-left: 10px;
+  }
+  
+  .discount {
+    color: #388e3c;
+    margin-left: 10px;
+  }
+  
+  .offers p {
+    font-weight: bold;
+    color: white;
+  }
+  
+  .offers ul {
+    list-style-type: none;
+    color: white;
+    padding: 0;
+  }
+  
+  .offers li {
+    background: url('https://via.placeholder.com/10') no-repeat left center;
+    background-size: contain;
+    padding-left: 20px;
+    margin: 5px 0;
+  }
+  
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px 0 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .buy-now {
+    background-color: #fb641b;
+    color: #fff;
+  }
+  
+  .add-to-cart {
+    background-color: #ff9f00;
+    color: #fff;
+  }
+  
+  .delivery-info {
+    margin-top: 20px;
+  }
+  
+  .pincode-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .check-pincode {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2874f0;
+    color: #fff;
+    cursor: pointer;
+  }
+  

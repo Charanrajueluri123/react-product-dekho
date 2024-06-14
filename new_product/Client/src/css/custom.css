@@ -1,0 +1,83 @@
+/* Align the search input and button */
+
+/* .search-input, .btn-custom {
+    height: 38px; /* Adjust this value to match the height of other navbar elements */
+ /*} */
+
+ /* Add these styles to your custom.css */
+
+
+.dropdown-menu.show {
+  display: block;
+  background-color: #0c0c0c;
+}
+
+.navbar-nav .dropdown-menu {
+  position: absolute;
+}
+
+  
+  .btn-custom {
+    color: rgb(228, 14, 14);
+    background-color: gray;
+    border-color: red;
+    margin: auto;
+   
+  }
+  
+
+  /* Additional styling to ensure vertical alignment */
+  .navbar .form-control {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .navbar .btn {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+  }
+  
+  .custom-navbar {
+    background-color: #0c0c0c;
+  }
+  
+  .brand-red {
+    color: red;
+    font-size: 23px;
+    font-style: oblique;
+  }
+  
+  .brand-white {
+    color: white;
+    font-size: 23px;
+  }
+  
+  .nav-link-red {
+    color: red !important;
+    margin-right: 50px;
+  }
+  
+  .nav-dropdown .dropdown-item-red {
+    color: red !important;
+  }
+  
+  .nav-dropdown .dropdown-item-red:hover {
+    background-color: #495057;
+  }
+  
+  .dictionary-results {
+    margin-top: 20px;
+    color: white;
+  }
+  /* src/css/custom.css */
+.custom-navbar {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+
+  
+ 

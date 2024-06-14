@@ -1,0 +1,314 @@
+
+body {
+  background-color: black !important;
+  margin: 0;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+
+@keyframes shining {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+.nav-right{
+  margin-left: auto;
+  margin-top: 10px;
+  color: red;
+}
+
+.nav-link{
+  padding: 0 10px;
+}
+
+
+.nav-link {
+  padding: 0 10px;
+}
+
+
+
+.image-container {
+  margin-top: 40px;
+  white-space: nowrap; /* Prevent images from wrapping to the next line */
+  overflow: hidden; /* Hide overflow content */
+  width: 75%; /* Ensure container takes up full width */
+}
+
+.image-container img {
+  display: inline-block; /* Display images in a row */
+  height: 100%; /* Make images fill the container vertically */
+  animation: scroll 10s linear infinite; /* Animation for automatic scrolling */
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(0); /* Start position */
+  }
+  100% {
+    transform: translateX(-100%); /* End position (slides all the way to the right) */
+  }
+}
+
+/* .submit-button{
+  margin-left: 650px;
+  margin-top: 50px;
+  box-sizing: border-box;
+  padding: 12px 30px;   
+
+}
+   */
+
+.headingSpan{
+  margin-left: 350px;
+  margin-top: 30px;
+
+  color:red;
+}
+
+.main-div{
+  margin: 60px;
+}
+
+
+
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center; /* Center the carousel vertically */
+  height: 10vh; /* Set initial height (adjust as needed) */
+  margin-right: 60px; /* Corrected the margin shorthand */
+}
+
+.carousel {
+  width: 100%; /* Set the width of the carousel (adjust as needed) */
+  max-width: 3500px; /* Set a maximum width to prevent it from becoming too large */
+  height: 650px; /* Set a fixed height for the carousel */
+  overflow: hidden; /* Hide overflow content */
+}
+
+/* @media screen and (min-width: 768px){
+  .media{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+  }
+  
+} */
+
+
+@media screen and (min-width:1000px){
+  .media{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+  }
+  
+}
+
+
+
+
+.heading1 .Image{
+  width: 500px;
+  height: 300px;
+  margin-left: 100px;
+  border: 2px solid white;
+}
+
+.heading2 .Image{
+  width: 500px;
+  height: 300px;
+  margin-right: 100px;
+  border: 2px solid white;
+}
+
+.image-main {
+  display: flex;
+}
+
+
+.image-data {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:30px;
+  margin: 100px;
+  margin-bottom: 100px;
+  margin-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  /* border-right: em solid white; Blinking cursor effect */
+  /* width: 0; Hide the text initially */
+  /* animation: typing 10s steps(60, end), blink-caret .75s step-end infinite; */
+
+}
+
+.animated-line {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: .15em solid white; /* Blinking cursor effect */
+  width: 0; /* Hide the text initially */
+  animation: typing 5s steps(50, end) forwards, blink-caret .75s step-end infinite;
+  animation-delay: var(--delay);
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
+}
+
+
+
+
+
+.data{
+  margin-left: 50px;
+}
+
+.formdata{
+  margin: 100px;;
+}
+
+.mb-3{
+  margin: 20px;
+  width: 750px;
+  margin-left: 350px;
+  color: white;
+  /* margin- */
+}
+
+.loginSubmit{
+  margin-left: 630px;
+  width: 200px;
+  padding: 12px 30px; 
+}
+
+.mb{
+  margin: 20px;
+  width: 750px;
+  margin-left: 350px;
+  color: white;
+}
+
+.social-container {
+  padding: 25px 50px;
+  margin-left: 550px;
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+a.youtube {
+  color: #eb3223;
+}
+
+a.facebook {
+  color: #4968ad;
+}
+
+a.twitter {
+  color: #49a1eb;
+}
+
+a.instagram {
+  color: pink;
+}
+
+.form-table{
+  margin:30px;
+}
+.form-content{
+  /* margin:30px; */
+  margin-left: 500px;
+ 
+}
+
+.form-content input{
+  /* margin:20px; */
+  width: 500px;
+  height: 50px;
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px; /* Add some padding for better appearance */
+  border: 1px solid #ccc;
+
+}
+.form-content p{
+  color: white;
+  margin-left: 10px;
+}
+.form-button{
+  margin-left: 650px;
+  margin-top: 50px;
+}
+.form-button button{
+  width:200px;
+  height: 45px; 
+  background-color: rgb(0, 166, 255);
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px; /* Add some padding for better appearance */
+  border: 1px solid #ccc;
+}
+
+.d-flex .me-2{
+  width: 300px;
+ height: 40px;
+}
+
+.d-flex .search{
+  color: red;
+  margin-left:0px;
+  width:30px;
+  background-color: black;
+}
+
+.red-text{
+  color: red;
+}
+
+.electric-css{
+  margin: 30px;
+  
+}
+
+.heading{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+.electirc-root {
+  display: flex;
+}
+
+.electirc-root .electric-css .img{
+  width:1400px;
+  height: 700px;
+}
+
+
+
+/* styles.css */
+
+
