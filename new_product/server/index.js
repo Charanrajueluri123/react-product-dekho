@@ -3,15 +3,14 @@ const mongoose = require('mongoose');
 const cors = require("cors");
 const UsersModel = require('./models/Users');
 
-const app = express();  
+const app = express();
 
-app.use(cors(
-  {
-    origin:["https://product-dekho-react.vercel.app"],
-    methods:["POST"."GET"],
-    credentials: true;
-  }
-));
+app.use(cors({
+  origin: ["https://product-dekho-react.vercel.app"], // Update with the correct frontend URL
+  methods: ["POST", "GET"], // Fix typo and misplaced semicolon
+  credentials: true,
+}));
+
 app.use(express.json());
 
 mongoose.connect("mongodb+srv://charanrajueluri:2004ecru@cluster0.hruzsfz.mongodb.net/Users?retryWrites=true&w=majority&appName=Cluster0", {
@@ -23,9 +22,9 @@ mongoose.connect("mongodb+srv://charanrajueluri:2004ecru@cluster0.hruzsfz.mongod
   console.error("Failed to connect to the database", err);
 });
 
-app.get("/",(req, res) => {
+app.get("/", (req, res) => {
   res.json("Hello");
-})
+});
 
 app.post("/login", (req, res) => {
   const { email, password } = req.body;
