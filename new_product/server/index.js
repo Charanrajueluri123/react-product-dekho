@@ -80,7 +80,7 @@ app.post('/register', async (req, res) => {
   }
 });
 
-app.post('/check-name', (req, res) => {
+app.post('https://react-product-dekho-backend.vercel.app/check-name', (req, res) => {
   const { value } = req.body;
   UsersModel.findOne({ name: value })
     .then(user => res.json({ exists: !!user }))
