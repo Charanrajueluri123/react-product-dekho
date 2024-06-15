@@ -29,7 +29,8 @@ function Signup() {
     }
 
     try {
-      const result = await axios.post('http://localhost:3001/register', { name, email, password });
+      const result = await axios.post('https://react-product-dekho-backend.vercel.app
+                                      /register', { name, email, password });
       if (result.data.message) {
         if (result.data.message.includes("email")) {
           setEmailMessage({ text: result.data.message, isError: true });
