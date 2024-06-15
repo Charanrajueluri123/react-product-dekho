@@ -9,7 +9,7 @@ app.use(cors());
 
 app.use(cors(
   {
-    origin:[""],
+    origin:["https://product-dekho-react.vercel.app"],
     methods:["POST"."GET"],
     credentials: true;
   }
