@@ -29,8 +29,7 @@ function Signup() {
     }
 
     try {
-      const result = await axios.post('https://react-product-dekho-backend.vercel.app
-                                      /register', { name, email, password });
+      const result = await axios.post('https://react-product-dekho-backend.vercel.app/register', { name, email, password });
       if (result.data.message) {
         if (result.data.message.includes("email")) {
           setEmailMessage({ text: result.data.message, isError: true });
@@ -48,7 +47,7 @@ function Signup() {
 
   const checkAvailability = async (field, value) => {
     try {
-      const response = await axios.post(`http://localhost:3001/check-${field}`, { value });
+      const response = await axios.post(`https://react-product-dekho-backend.vercel.app/check-${field}`, { value });
       if (response.data.exists) {
         if (field === "name") setNameMessage({ text: "Username already exists", isError: true });
         if (field === "email") setEmailMessage({ text: "Email already exists", isError: true });
