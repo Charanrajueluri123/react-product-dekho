@@ -25,6 +25,10 @@ mongoose.connect("mongodb+srv://charanrajueluri:2004ecru@cluster0.hruzsfz.mongod
   console.error("Failed to connect to the database", err);
 });
 
+app.get("/",(req, res) => {
+  res.json("Hello");
+})
+
 app.post("/login", (req, res) => {
   const { email, password } = req.body;
 
