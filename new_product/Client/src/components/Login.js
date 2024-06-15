@@ -10,6 +10,8 @@ function Login({ setIsLoggedIn, setUsername }) {
   const navigate = useNavigate();
   const location = useLocation();
 
+
+  axios.defaults.withCredentials = true;
   const handleSubmit = (e) => {
     e.preventDefault();
     axios.post('https://react-product-dekho-backend.vercel.app/login', { email, password })
