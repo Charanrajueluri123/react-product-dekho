@@ -12,7 +12,7 @@ function Login({ setIsLoggedIn, setUsername }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:3001/login', { email, password })
+    axios.post('https://react-product-dekho-backend.vercel.app/login', { email, password })
       .then(result => {
         console.log("Server response:", result.data);
         if (result.data.success) {
