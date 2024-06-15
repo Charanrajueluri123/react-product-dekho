@@ -4,10 +4,19 @@ const cors = require("cors");
 const UsersModel = require('./models/Users');
 
 const app = express();
-app.use(express.json());
+
 app.use(cors());
 
-mongoose.connect("mongodb://localhost:27017/ProductDekho", {
+app.use(cors(
+  {
+    origin:[""],
+    methods:["POST"."GET"],
+    credentials: true;
+  }
+));
+app.use(express.json());
+
+mongoose.connect("mongodb+srv://charanrajueluri:2004ecru@cluster0.hruzsfz.mongodb.net/Users?retryWrites=true&w=majority&appName=Cluster0", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(() => {
