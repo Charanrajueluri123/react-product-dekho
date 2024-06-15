@@ -6,7 +6,7 @@ const UsersModel = require('./models/Users');
 const app = express();
 
 app.use(cors({
-  origin: ["https://product-dekho-react.vercel.app"], // Update with the correct frontend URL
+  origin: ["https://react-product-dekho-froentend.vercel.app"], // Update with the correct frontend URL
   methods: ["POST", "GET"], // Fix typo and misplaced semicolon
   credentials: true,
 }));
