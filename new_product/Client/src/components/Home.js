@@ -69,7 +69,7 @@ function DarkVariantExample() {
 
       <div className="image-data">
        <p>
-        <span className="animated-line">Unlock Your Next Adventure: Explore Unbeatable Cars...</span>
+        <span className="animated-line" style={{marginLeft:"100px"}}>Unlock Your Next Adventure: Explore Unbeatable Cars...</span>
        </p>
       </div>
 
