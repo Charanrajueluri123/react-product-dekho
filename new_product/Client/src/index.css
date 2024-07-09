@@ -127,7 +127,8 @@ body {
 .heading2 .Image{
   width: 500px;
   height: 300px;
-  margin-right: 100px;
+/*   margin-right: 100px; */
+  margin-left: 250px;
   border: 2px solid white;
 }
 
